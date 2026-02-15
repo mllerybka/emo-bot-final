@@ -1,3 +1,13 @@
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("Bot żyje.");
+});
+
+app.listen(3000, () => {
+  console.log("Serwer działa na porcie 3000");
+});
 require("dotenv").config();
 const fs = require("fs");
 const path = require("path");
